@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seek Immediate Help</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <style>
+    h2 {
+      text-align: center;
+    }
+    .card {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+      }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      }
+      body {
+        background: url('https://i.postimg.cc/dsj2q1B8/bgimage.png'),#ffffff;
+      }
+      body,
+    	html {
+    		height: 1000px;
+    	}
+      .jumbotron {
+          background: #f725e2;
+      }
+    </style>
+
+</head>
+  <body>
+    <!--heading-->
+    <h2>ConqueringCOVID-19</h2>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ url_for('index') }}"><img src="https://i.postimg.cc/KYsK1Gvc/bgimage.png" width=60px></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('index') }}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('community') }}">Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('discuss') }}">Discussion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('understand') }}">Understanding COVID-19</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('destress') }}">Destress</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('register') }}">Join the Community</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('hotlines') }}">Seek Immediate Help</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--Jumbotron-->
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-5">Ways You Can Find Help Now</h1>
+    <p class="lead">If you are in situation in which you need to find help now,
+      there are many ways to find help based on the circumstances of the situation.
+    In an effort to help you in any way possible, we have linked several phone numbers
+  and websites in which you can get the help you need.</p>
+  </div>
+</div>
+<!--Cards-->
+    <div class="container">
+  <div class="card" style="width: 18rem;">
+    <img src="https://i.postimg.cc/9fhZcNkJ/download.jpg" class="card-img-top" alt="USAPD">
+  <div class="card-body">
+    <h5 class="card-title">Call the Police</h5>
+    <p class="card-text">Call 911!</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Call if you or someone close to you needs immediate assistance.</li>
+    <li class="list-group-item">Despite recent controversy, there are effective police officers that are always available to help.</li>
+    <li class="list-group-item"><a href="tel: 911"> If necessary, click this button to call now!</a></li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.justice.gov/crs/file/836486/download" class="card-link">Learn about how the police can help you</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/DfHW2MJL/Unknown.png" class="card-img-top" alt="SAMHSA">
+  <div class="card-body">
+    <h5 class="card-title">Disaster Destress Helpline</h5>
+    <p class="card-text">If you are suffering the loss of a close relative or struggling to relive a difficult moment, call or text this number now. </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href="tel: 1-800-985-5990">Call Now!</a></li>
+    <li class="list-group-item">Text TalkWithUs for English or Hablanos for Spanish to <a href="tel: 66746">66746</a>.</li>
+    <li class="list-group-item">Spanish speakers from Puerto Rico can text Hablanos to <a href="1-787-339-2663">1-787-339-2663</a>.</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.samhsa.gov/disaster-preparedness" class="card-link">Learn about the Disaster Destress Hotline</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/W12kdfj3/Unknown.png" class="card-img-top" alt="National Suicide Prevention Hotline">
+  <div class="card-body">
+    <h5 class="card-title">National Suicide Prevention Lifeline</h5>
+    <p class="card-text">If you are contemplating harming yourself or even taking your life, it is best to talk to someone.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">For English, call <a href="tel: 1-800-273-8255">1-800-273-8255</a>.</li>
+    <li class="list-group-item">For Spanish,call <a href="tel: 1-888-628-9454">1-888-628-9454</a>.</li>
+    <li class="list-group-item">To talk with people who may be experiencing a similar situation, check out <a href="https://suicidepreventionlifeline.org/chat/">the Lifeline Crisis Chat</a>.</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://suicidepreventionlifeline.org/" class="card-link">Learn about how the Suicide Lifeline can help you</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/bv4r96X1/100.jpg" class="card-img-top" alt="National Domestic Violence Hotline">
+  <div class="card-body">
+    <h5 class="card-title">National Domestic Violence Hotline</h5>
+    <p class="card-text">If you are a victim of domestic violence or know someone who is, it is important to make your voice heard.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Call <a href="tel: 1-800-799-7233">1-800-799-7233</a>.</li>
+    <li class="list-group-item">Text LOVEIS <a href="tel: 22522">22522</a>.</li>
+    <li class="list-group-item"><a href="https://www.thehotline.org/is-this-abuse/">Identify whether your situation is abuse or not.</a></li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.thehotline.org/" class="card-link">Learn about how the National Domestic Violence Hotline can help you</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/j5qgvhzd/Unknown.png" class="card-img-top" alt="National Child Abuse Hotline">
+  <div class="card-body">
+    <h5 class="card-title">National Child Abuse Hotline</h5>
+    <p class="card-text">If you are a victim of child abuse or know someone who is, it is important to notify the appropriate officials as soon as possible.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Call <a href="1-800-422-4453">1-800-422-4453</a>.</li>
+    <li class="list-group-item">You can also text <a href="1-800-422-4453"> this number</a> as well.</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.childhelp.org/hotline/" class="card-link">Learn about how the Childhelp National Child Abuse Hotline can help you</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/DfHW2MJL/Unknown.png" class="card-img-top" alt="SAHMSA">
+  <div class="card-body">
+    <h5 class="card-title">SAMHSA's National Helpline</h5>
+    <p class="card-text">Find a health care provider or treatment for substance use disorder and mental health</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Call <a href="tel: 1-800-662-4357">1-800-662-4357</a>.</li>
+    <li class="list-group-item">Teletype <a href="tel: 1-800-487-4889">1-800-487-4889</a>.</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.samhsa.gov/find-help/national-helpline" class="card-link">Learn about how SAMHSA can help you.</a>
+  </div>
+</div>
+</div>
+  </body>
+</html>

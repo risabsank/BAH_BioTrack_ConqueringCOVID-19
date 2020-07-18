@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <style>
+      h2 {
+        text-align: center;
+      }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+      }
+    h3, p {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    body {
+      background: linear-gradient(#b942f5, #fc03a9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class=#grad>
+    <!--heading-->
+    <h2>ConqueringCOVID-19</h2>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ url_for('index') }}"><img src="https://i.postimg.cc/KYsK1Gvc/bgimage.png" width=60px></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('index') }}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('community') }}">Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('discuss') }}">Discussion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('understand') }}">Understanding COVID-19</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('destress') }}">Destress</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('register') }}">Join the Community</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('hotlines') }}">Seek Immediate Help</a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ url_for('about') }}">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h3>Why is this website important?</h3>
+  <i><p>With the rising COVID-19 cases across the world, nations have placed hundreds and millions
+  of dollars into hospitals and health services, while only a small fraction of the money goes
+  into mental health. A new disease comes with a lot of stress as people are constantly wondering
+  whether the people around them have the virus or not. Additionally, isolation at home has caused
+  several people to feel lonely resulting in a spike in depression cases across the nation. Through this
+  website, we hope to help people regain confidence in themselves, meet new people, and destress. </p></i>
+  <h3>What is the goal that we are trying to accomplish with this website?</h3>
+  <i><p>With this website, our goal is to aid people in the process of improving their mental health.
+  Our goal is to create a community in which people can talk with others to learn more about their situations.
+  We also want users to be able to develop a plan in order to help them moving forward as they can utilize
+  this plan to organize their goals for the future. In general, we hope to help people regain structure in their
+  lives and improve their confidence in themselves moving forward.</p></i>
+  <h3>What are the features of our website?</h3>
+  <i><p>Our website has several features that help users stay informed, involved, and prepared:
+  <ul>
+    <li>Plan: Users can develop a plan for themselves to help them accomplish their goals and understand what needs to be done to accomplsh these goals.</li>
+    <li>Discussion: Users can talk to one another, enabling them to interact with people they don't know.</li>
+    <li>Understanding COVID-19: Users can learn more about the symptoms that one experiences if they were to be infected. They can also learn about precautions they can take as well as the effectiveness of these precautions.</li>
+    <li>Destress: Users can apply the destressing techniques from this page to relax whenever they feel too much stress or pressure.</li>
+    <li>Seek Immediate Help: Finally, if someone were to need immediate help from a professional, there is a page with all the important information and hotlines that they can use.</li>
+  </ul></p></i>
+  <h3>Why did we name our website ConqueringCOVID-19?</h3>
+  <i><p>By definition, conquering is the act of overcoming a challlenge or task and taking control of.
+  In terms of the pandemic, we hope that people can overcome the challenges posed by the pandemic to take
+  control of their situation. We believe the features in the website will help users in overcoming their
+  personal challenges during this trying time.</p></i>
+  <h3>Meet the Creators of this Website:</h3>
+  <div class="container">
+    <div class="card" style="width: 15rem;">
+  <img src="https://i.postimg.cc/FKCTNPzd/IMG-1158.jpg" class="card-img-top" alt="Risab Sankar">
+  <div class="card-body">
+    <h5 class="card-title">Risab Sankar</h5>
+    <p class="card-text">Full-Stack Developer | Data Science | Machine Learning | Python, HTML5/CSS, SQL, R, Flutter</p>
+    <a href="https://www.linkedin.com/in/risab-sankar-9136541aa">Learn More</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img src="https://i.postimg.cc/QMy6g6pg/image0.jpg" class="card-img-top" alt="Suhanth Alluri">
+  <div class="card-body">
+    <h5 class="card-title">Suhanth Alluri</h5>
+    <p class="card-text">Web Developer | Front-End Specialist | HTML, CSS, Python, JavaScript</p>
+    <a href="https://i.postimg.cc/QMy6g6pg/image0.jpg">Learn More</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img src="https://i.postimg.cc/CLDM8XV0/199561.jpg" class="card-img-top" alt="Nate Kattady">
+  <div class="card-body">
+    <h5 class="card-title">Nate Kattady</h5>
+    <p class="card-text">Research Assistant at UPenn | Biology | Medicine</p>
+    <a href="https://www.youtube.com/watch?v=B-wMKH3JRA0">Learn More</a>
+  </div>
+</div>
+<div class="card" style="width: 15rem;">
+  <img src="https://i.postimg.cc/pr3gH4Kk/IMG-0697.jpg" class="card-img-top" alt="Chadvik Maganti">
+  <div class="card-body">
+    <h5 class="card-title">Chadvik Maganti</h5>
+    <p class="card-text">BioTech | Medical Engineering | Artificial Intelligence | Health</p>
+    <a href="#">Learn More</a>
+  </div>
+</div>
+    </div>
+    </div>
+  </body>
+</html>

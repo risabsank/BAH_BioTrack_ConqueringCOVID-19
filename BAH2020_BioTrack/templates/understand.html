@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Understanding COVID-19</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+    h2 {
+      text-align: center;
+    }
+    body {
+      background: linear-gradient(#b942f5, #fc03a9);
+      }
+      .jumbotron {
+          background: #f725e2;
+      }
+      .display-5 {
+        text-align: left;
+      }
+      .content {
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+      margin-bottom: 10px;
+      margin-right: 20px;
+      margin-top: 20px;
+        }
+    </style>
+</head>
+  <body>
+    <!--heading-->
+    <h2>ConqueringCOVID-19</h2>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ url_for('index') }}"><img src="https://i.postimg.cc/KYsK1Gvc/bgimage.png" width=60px></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('index') }}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('community') }}">Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('discuss') }}">Discussion</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('understand') }}">Understanding COVID-19</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('destress') }}">Destress</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('register') }}">Join the Community</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('hotlines') }}">Seek Immediate Help</a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--Jumbotron-->
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h2 class="display-5">Learn More About the Virus That has Taken Over the World</h2>
+  <p class="lead">Though the virus has been one of the most deadly viruses in recent
+  history, people across the world seem to lack knowledge of the adverse health effects of
+  the virus. Some overestimate the seriousness of the virus, causing constant paranoia, while
+  others tend to undermine the seriousness of the virus. This page is dedicated to keeping
+  you informed about the virus and how to take precautions to prevent the spread of the virus.</p>
+</div>
+</div>
+<!--content-->
+<img src = "https://i.postimg.cc/cLZsCnfB/20634.jpg" width = 25% style="float:right">
+<div class="content">
+          <h4>COVID-19 Cases</h4>
+          <h5>With COVID-19 cases rising up at an exponential rate, it is important
+          to increase your knowledge on the virus to become more adept in fighting
+          it. By learning more about the virus, you are also learning more about how to stop
+          it from spreadng to your closed ones. As of July 15, there are 3,416,428 cases in the USA,
+          135,991 deaths as a result of the virus. Though the disease seems unstoppable, it is
+          very preventable.</h5>
+</div>
+<br>
+<br>
+<div class = "content">
+          <h4>Common Symptoms of COVID-19:</h4>
+          <ul>
+            <li>Fever or chills</li>
+            <li>Cough</li>
+            <li>Shortness of breath or difficulty breathing</li>
+            <li>Fatigue</li>
+            <li>Muscle or body aches</li>
+            <li>Headache</li>
+            <li>New loss of taste or smell</li>
+            <li>Sore throat</li>
+            <li>Congestion or runny nose</li>
+            <li>Nausea or vomiting</li>
+            <li>Diarrhea</li>
+          </ul>
+          <h4>If you see someone with these symptoms, they should seek medical care immeidately:</h4>
+          <ul>
+            <li>Trouble breathing</li>
+            <li>Persistent pain or pressure in the chest</li>
+            <li>New confusion</li>
+            <li>Inability to wake or stay awake</li>
+            <li>Bluish lips or face</li>
+          </ul>
+</div>
+<div class = "content">
+          <h4>COVID-19 Cases:</h4>
+          <div class = "container">
+          <div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/gJ5SJQBL/960x0.jpg" class="card-img-top" alt="Donovan Mitchell">
+  <div class="card-body">
+    <h5 class="card-title">Asymptomatic Case</h5>
+    <p class="card-text">Basketball Star Donavan Mitchell tested positive for COVID-19 in March.
+    Despite being infected, he did not experience any symptoms at all.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An Asymptomatic Person can still pass the disease to others</li>
+    <li class="list-group-item">A lack of symptoms was most likely a result of him being of a younger age</li>
+    <li class="list-group-item">He is currently recovered and planning to play again in the NBA</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.nba.com/article/2020/03/16/donovan-mitchell-interview-says-asymptomatic" class="card-link">Learn More</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://i.postimg.cc/ncxKkn7c/download.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Nearly Fatal Case</h5>
+    <p class="card-text">Bodybuilder Ahmad Ayyas was extremely healthy before contracting the virus. He proceeded
+    to be in the hospital for 25 days on a ventilator and lostt approximately 60 pounds.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Effects: Blood Clot in Left Arm, Damage to his Heart and Lungs</li>
+    <li class="list-group-item">He is on the patht to recovery and becoming his old self.</li>
+    <li class="list-group-item">"Every day, I'm getting better and better...I'm slowly getting my weight back. I'm eating a lot; I'm taking walks outside." - Ahmad Ayyad</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.hopkinsmedicine.org/coronavirus/patient-stories/ahmad-ayyad.html" class="card-link">Learn More</a>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<div class="content">
+    <h4>Precautions to Take to Mitigate Spread of Disease:</h4>
+    <ul>
+      <li>Clean your hands often, either with soap and water for 20 seconds or a hand sanitizer that contains at least 60% alcohol.</li>
+      <li>Avoid close contact with people who are sick.</li>
+      <li>Cover your mouth and nose with a cloth face cover when around others.</li>
+      <li>Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</li>
+      <li>Clean and disinfect frequently touched objects and surfaces daily.</li>
+      <li>Cloth face coverings may help prevent people who have COVID-19 from spreading the virus to others.</li>
+    </ul>
+</div>
+  </body>
+</html>

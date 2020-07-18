@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<title>ConqueringCovid-19</title>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/6e849f188d.js">
+</script>
+<style>
+	body,
+	h1,
+	h5 {
+		font-family: "Raleway", sans-serif
+	}
+
+	body,
+	html {
+		height: 1000px;
+	}
+
+	.bgimg {
+		position: relative;
+		background: url('https://i.ibb.co/XCy4rrb/bgimage.png');
+		height: 950px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		div:nth-child(1) {
+			position: absolute;
+		}
+	}
+
+	.page-wrap {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.glyphicon-earphone:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Seek Immediate Help";
+		position: absolute;
+		top: 75px;
+		right: -75px;
+		width: 195px;
+		height: 65px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.glyphicon-book:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Understanding COVID-19";
+		position: absolute;
+		top: 75px;
+		right: -60px;
+		width: 190px;
+		height: 65px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.glyphicon-home:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Home";
+		position: absolute;
+		top: 75px;
+		right: -12px;
+		width: 85px;
+		height: 35px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+	}
+
+	.glyphicon-user:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Join the Community";
+		position: absolute;
+		top: 75px;
+		right: -35px;
+		width: 140px;
+		height: 65px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+	}
+
+	.glyphicon-info-sign:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "About Us";
+		position: absolute;
+		top: 75px;
+		right: -28px;
+		width: 120px;
+		height: 35px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+	}
+
+	.glyphicon-refresh:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Destress";
+		position: absolute;
+		top: 75px;
+		right: -21px;
+		width: 110px;
+		height: 35px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+	}
+
+	.glyphicon-comment:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Discussion";
+		position: absolute;
+		top: 72px;
+		right: -30px;
+		width: 135px;
+		height: 35px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+	}
+
+	.glyphicon-calendar:hover:after {
+		font: 20px sans-serif;
+		display: block;
+		content: "Plan";
+		position: absolute;
+		top: 72px;
+		right: 2px;
+		width: 70px;
+		height: 35px;
+		background: lightslategray;
+		border-radius: 16px;
+		text-align: center;
+		font-size: 25px;
+		color: seashell;
+	}
+
+	.w3-container {
+		width: 1500px;
+	}
+
+	body {
+		background: linear-gradient(#ef008c, #b200ff);
+		;
+		;
+	}
+
+	.fade-in {
+		animation: fadeIn ease 5s;
+		-webkit-animation: fadeIn ease 5s;
+		-moz-animation: fadeIn ease 5s;
+		-o-animation: fadeIn ease 5s;
+		-ms-animation: fadeIn ease 5s;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-moz-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-o-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			color: inherit;
+
+		}
+</style>
+
+<body>
+
+	<div class="w3-container">
+		<div class="bgimg w3-display-container w3-text-black">
+			<div class="fade-in">
+				<h1 style="font-weight: bold; font-size:80px;text-align: left;font-family:sans-serif; margin-top: 50px">ConqueringCOVID-19
+				</h1>
+				<h2 style="font-size:30px; text-align: left;font-family:sans-serif; margin-top: 20px">Regain Self-Confidence, Improve
+					Mental Health, Join a Community
+				</h2>
+			</div>
+			<div class="w3-display-middle w3-jumbo ">
+			</div>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 385px; top: 455px" class="fas fa-circle "></div>
+			<a href="{{ url_for('hotlines') }}">
+				<div style="margin-right: 0.5em; color: mediumseagreen; font-size:70px; position:absolute; right: 410px; top: 465px"
+				 class="glyphicon glyphicon-earphone fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 860px; top: 457px" class="fas fa-circle"></div>
+			<a href="{{ url_for('understand') }}">
+				<div style="margin-right: 0.5em; color: skyblue; font-size:70px; position:absolute; right: 893px; top: 470px"
+				 class="glyphicon glyphicon-book fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 620px; top: 220px" class="fas fa-circle"></div>
+			<a href="{{ url_for('index') }}">
+				<div style="margin-right: 0.5em; color: aliceblue; font-size:70px; position:absolute; right: 655px; top: 235px"
+				 class="glyphicon glyphicon-home fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 620px; top: 690px" class="fas fa-circle"></div>
+			<a href="{{ url_for('register') }}">
+				<div style="margin-right: 0.5em; color: navajowhite; font-size:70px; position:absolute; right: 652px; top: 705px"
+				 class="glyphicon glyphicon-user fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 455px; top: 610px" class="fas fa-circle"></div>
+			<a href="{{ url_for('about') }}">
+				<div style="margin-right: 0.5em; color: thistle; font-size:70px; position:absolute; right: 490px; top: 625px"
+				 class="glyphicon glyphicon-info-sign fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 775px; top: 610px" class="fas fa-circle"></div>
+			<a href="{{ url_for('destress') }}">
+				<div style="margin-right: 0.5em; color: thistle; font-size:70px; position:absolute; right: 810px; top: 625px"
+				 class="glyphicon glyphicon-refresh fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 775px; top: 285px" class="fas fa-circle"></div>
+			<a href="{{ url_for('discuss') }}">
+				<div style="margin-right: 0.5em; color: thistle; font-size:70px; position:absolute; right: 810px; top: 305px"
+				 class="glyphicon glyphicon-comment fade-in"></div>
+			</a>
+
+			<div style="margin-right: 0.5em; color: black; font-size:100px; position:absolute; right: 455px; top: 285px" class="fas fa-circle"></div>
+			<a href="{{ url_for('community') }}">
+				<div style="margin-right: 0.5em; color: salmon; font-size:70px; position:absolute; right: 470px; top: 295px"
+				 class="glyphicon glyphicon-calendar fade-in"></div>
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>
